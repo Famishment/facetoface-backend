@@ -7,14 +7,13 @@ import com.google.gson.reflect.TypeToken;
 import com.lzj.facetoface.common.ErrorCode;
 import com.lzj.facetoface.constant.UserConstant;
 import com.lzj.facetoface.exception.BusinessException;
-import com.lzj.facetoface.model.domain.User;
-import com.lzj.facetoface.model.vo.UserVO;
-import com.lzj.facetoface.service.UserService;
 import com.lzj.facetoface.mapper.UserMapper;
+import com.lzj.facetoface.model.domain.User;
+import com.lzj.facetoface.service.UserService;
 import com.lzj.facetoface.utils.AlgorithmUtils;
-import javafx.util.Pair;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.math3.util.Pair;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.DigestUtils;
@@ -25,7 +24,6 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static com.lzj.facetoface.constant.UserConstant.USER_LOGIN_STATE;
 
